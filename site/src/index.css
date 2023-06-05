@@ -140,6 +140,53 @@ transition:width 2s;
 animation: 2s ease-out 0s 1 grow;
 }
 
+.slideshow
+{
+position: absolute;
+top:50vh;
+left:40vw;
+width:10vw;
+height:10vw;
+background-color: red;
+animation-name: slide;
+animation-duration: 2s;
+animation-iteration-count: infinite;
+
+}
+
+.slideshow2
+{
+position: absolute;
+top:50vh;
+left:40vw;
+width:10vw;
+height:10vw;
+background-color: yellow;
+animation-delay:1s;
+animation-name: slide;
+animation-duration: 2s;
+animation-iteration-count: infinite;
+
+}
+.slideshow3
+{
+position: absolute;
+top:50vh;
+left:40vw;
+width:10vw;
+height:10vw;
+background-color: blue;
+animation-delay:2s;
+animation-name: slide;
+animation-duration: 2s;
+animation-iteration-count: infinite;
+
+}
+
+@keyframes slide
+{
+100%{left:80vw;}
+}
 
 
 
