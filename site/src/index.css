@@ -5,11 +5,15 @@
   padding:0;
   
 }
+:root
+{
+  --middle:calc( 50vh - 10vw);
+}
 
 
 html
 {
-
+overflow-x:hidden;
 font-size: 10px; 
 color: white;
 }
@@ -34,6 +38,8 @@ code {
 
 .navbar
 {
+  position:relative;
+  z-index:3;
   height:100vh;
   font-size:2rem;
   width: 4.5rem;
@@ -88,6 +94,7 @@ border-color:rgb(43,158,120) ;
 
 .smt
 {
+
 height:100vh;
 width:calc( 100vw - 4.5rem);
 margin-left:4.5rem;
@@ -143,49 +150,66 @@ animation: 2s ease-out 0s 1 grow;
 .slideshow
 {
 position: absolute;
-top:50vh;
-left:40vw;
-width:10vw;
-height:10vw;
+visibility: hidden;
+top:var(--middle);
+left:0vw;
+width:25vw;
+height:15vw;
 background-color: red;
-animation-name: slide;
-animation-duration: 2s;
-animation-iteration-count: infinite;
+animation:slide 15s linear infinite;
 
 }
 
-.slideshow2
+.startAnimation
+{
+  animation-play-state: running;
+}
+
+.stopAnimation
+{
+  animation-play-state:paused;
+}
+
+.curtain
 {
 position: absolute;
-top:50vh;
-left:40vw;
-width:10vw;
-height:10vw;
-background-color: yellow;
-animation-delay:1s;
-animation-name: slide;
-animation-duration: 2s;
-animation-iteration-count: infinite;
-
+z-index: 3;
+background-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0));
+height:100vh;
+width:20vw;
 }
-.slideshow3
+
+.curtain:nth-child(1)
 {
-position: absolute;
-top:50vh;
-left:40vw;
-width:10vw;
-height:10vw;
-background-color: blue;
-animation-delay:2s;
-animation-name: slide;
-animation-duration: 2s;
-animation-iteration-count: infinite;
-
+background-image: linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0));
+left:calc((100vw - 20vw));
 }
+
+
+
+.slideshow:nth-child(2){animation-delay:1.25s;}
+.slideshow:nth-child(3){animation-delay:2.50s;}
+.slideshow:nth-child(4){animation-delay:3.75s;}
+.slideshow:nth-child(5){animation-delay:5s;}
+.slideshow:nth-child(6){animation-delay:6.25s;}
+.slideshow:nth-child(7){animation-delay:7.50s;}
+.slideshow:nth-child(8){animation-delay:8.75s;}
+.slideshow:nth-child(9){animation-delay:10s;}
+.slideshow:nth-child(10){animation-delay:11.25s;}
+.slideshow:nth-child(11){animation-delay:12.5s;}
+.slideshow:nth-child(12){animation-delay:13.75s;}
+
+
+
+
 
 @keyframes slide
 {
-100%{left:80vw;}
+0%  {left:0vw;top:var(--middle);visibility:visible;} 
+25% {left:90vw;top:var(--middle);visibility:hidden ;}
+50% {left:90vw;top:0vh;visibility: hidden;}
+75% {left:0vw;top:0vh;visibility: hidden;}
+100% {left:0vw;top:var(--middle);visibility: hidden;}
 }
 
 

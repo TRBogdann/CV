@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+
+.stop
+{
+  animation-play-state:paused;
+}
+
+.start
+{
+  animation-play-state:start;
+}

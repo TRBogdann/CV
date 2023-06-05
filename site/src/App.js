@@ -56,8 +56,8 @@ function App() {
       <Loader/>
       :
       <>
-       <NavBar />
-      {currentPage}
+        <NavBar />
+       {currentPage}  
       </>
     }
      
