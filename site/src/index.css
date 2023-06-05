@@ -1,0 +1,145 @@
+*,*::after,*::before
+{
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+  
+}
+
+
+html
+{
+
+font-size: 10px; 
+color: white;
+}
+
+
+
+
+
+body {
+   background-color: rgb(6, 28, 36);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.navbar
+{
+  height:100vh;
+  font-size:2rem;
+  width: 4.5rem;
+  display: flex;
+  align-items:center;
+  background-color: black;
+  float: left;
+}
+.navbuttons
+{
+display:flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+width:4rem
+}
+
+.mycolor
+{
+  background-color:rgb(43,158,120);
+}
+
+.navbutton
+{
+width:2.5rem;
+margin-top:1.5rem;
+margin-bottom:1.5rem;
+}
+
+.navbutton:hover
+{
+filter:brightness(50%);
+}
+
+.buttonHome
+{
+color:rgb(43,158,120);
+width:11rem;
+height: 4rem;
+background-color:rgba(43,158,120,0.1);
+border:1px solid;
+border-radius:5px;
+border-color:rgb(43,158,120) ;
+
+
+}
+
+.buttonHome:hover
+{
+  background-color:rgba(43,158,120,0.3);
+}
+
+.smt
+{
+height:100vh;
+width:calc( 100vw - 4.5rem);
+margin-left:4.5rem;
+}
+
+.loadtext
+{
+font-size:3rem;
+margin-bottom:2rem;
+
+}
+.loader
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width:100vw;
+  height:100vh;
+
+}
+
+
+@keyframes grow {
+  0% {
+    width:0px;
+  }
+
+  100% {
+    width:50rem;
+    background-color:royalblue;
+  }
+  
+}
+
+.barContainer
+{
+ width:50rem;
+ display: flex;
+ justify-content: flex-start;
+}
+
+.bar
+{
+border-radius: 50px;
+width:0px;
+height:5rem;
+background-color: aquamarine;
+transition:width 2s;
+animation: 2s ease-out 0s 1 grow;
+}
+
+
+
+
