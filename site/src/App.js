@@ -3,13 +3,13 @@ import './App.css';
 
 import React, {useState,useEffect} from 'react';
 
-import Loader from './Loader';
-import NavBar from './NavBar';
-import Home from './home';
-import Contact from './contact';
-import Info from './info';
-import Link from './link';
-import Portofolio from './protofolio';
+import Loader from './componets/Loader';
+import NavBar from './componets/NavBar';
+import Home from './pages/home';
+import Contact from './pages/contact';
+import Info from './pages/info';
+import Link from './pages/link';
+import Portofolio from './pages/protofolio';
 
 function App() {
 
@@ -45,6 +45,9 @@ function App() {
   case "/link":
     currentPage=<Link/>
     break;
+
+  default:
+    currentPage=<Home/>;
 
   }
 

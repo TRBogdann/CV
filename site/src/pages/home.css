@@ -1,0 +1,114 @@
+
+
+.homeContainer
+{
+display:flex;
+justify-content:center;
+align-items: center;
+font-size: 1.3vw;
+}
+
+.frontInfo
+{   
+    margin-top:5vh;
+    width:75vw;
+    height:90vh;
+    background-color: rgb(35, 43, 46);
+    border-radius: 20px;
+}
+
+.shortAboutme
+{   display: flex;
+    width:75vw;
+    height:60vh;
+   
+}
+.circleHome
+{  
+    width:25vw;
+    height:25vw;
+    margin-left:2vw;
+    margin-top:calc(30vh - 12.5vw);
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.myphoto
+{
+    
+    width:22vw;
+    height:22vw;
+    object-fit:cover;
+    border-radius: 50%;
+}
+
+
+
+.textboxHome
+{   
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    width:50vw;
+    color:rgb(165, 165, 165);
+    
+
+}
+.skills
+{
+    height:30vh;
+    
+}
+
+.textHome>h3
+{
+margin-top:15vh;
+margin-bottom:0.5vh;
+}
+
+.textHome>h1
+{
+margin-bottom:2vh;
+}
+
+.textHome
+{
+width:45vw;
+height:50vh;
+
+}
+
+.buttonsHome
+{
+    margin-right:10vw;
+}
+
+.bubbles
+{       
+    width:75vw;
+    height:2.5vh;
+    display:flex;
+    justify-content: center;
+
+}
+.bubble
+{   width:2.5vh;
+    height:2.5vh;
+    margin-left:1vw;
+    border-radius:50%;
+    background-color:rgb(43,158,120);
+    border:1px solid rgb(0, 43, 29);
+}
+
+.bubble:hover
+{
+background-color: rgba(43,158,120,0.3);
+}
+
+.bubble:nth-child(1)
+{
+    margin-left:0;
+}
